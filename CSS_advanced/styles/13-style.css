@@ -39,9 +39,21 @@ body {
     line-height: var(--line-height-base);
 }
 
-a {
+a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+a[href]:visited {
+    font-style: italic;
+}
+
+a[href]:hover {
+    text-decoration: underline;
+}
+
+a[href]:active {
+    background-color: var(--color-light-grey);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,20 +85,4 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
     text-transform: var(--section-tagline-transform);
-}
-
-a[href] {
-    text-decoration: none;
-}
-
-a[href]:visited {
-    font-style: italic;
-}
-
-a[href]:hover {
-    text-decoration: underline;
-}
-
-a[href]:active {
-    background-color: var(--color-light-grey);
 }
