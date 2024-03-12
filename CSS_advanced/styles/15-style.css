@@ -377,7 +377,7 @@
 }
 
 * {
-    box-sizing: content-box;
+    box-sizing: unset;
 }
 
 html {
